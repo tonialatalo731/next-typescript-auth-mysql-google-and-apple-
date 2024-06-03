@@ -94,9 +94,9 @@ const Home: React.FC = () => {
   };
   return (
     <div className="w-[100%] h-screen flex items-center justify-center">
-      <div className="m-auto w-[35%]">
+      <div className="m-auto w-[25%]">
         <div className="bg-white rounded-[5px]">
-          <div className="text-center w-[100%] px-[20px]">
+          <div className="text-center w-[100%] px-[20px] pb-5">
             <h1 className="text-[30px] p-4">Sign Up</h1>
             <form onSubmit={handleSubmit}>
               {apiResponse && (
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
               <div className="mb-3">
                 <input
                   type="text"
-                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[60%] max-[950px]:w-[100%] ${
+                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[80%] max-[950px]:w-[100%] ${
                     nameError ? "is-invalid" : ""
                   }`}
                   id="name"
@@ -123,7 +123,7 @@ const Home: React.FC = () => {
               <div className="mb-3">
                 <input
                   type="email"
-                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[60%] max-[950px]:w-[100%] ${
+                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[80%] max-[950px]:w-[100%] ${
                     emailError ? "is-invalid" : ""
                   }`}
                   id="email"
@@ -139,7 +139,7 @@ const Home: React.FC = () => {
               <div className="mb-3">
                 <input
                   type="password"
-                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[60%] max-[950px]:w-[100%] ${
+                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[80%] max-[950px]:w-[100%] ${
                     passwordError ? "is-invalid" : ""
                   }`}
                   id="password"
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
               <div className=" mb-3">
                 <input
                   type="password"
-                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[60%] max-[950px]:w-[100%] ${
+                  className={`border mt-[5px] border-gray-300 rounded-[5px] p-1 m-auto min-[950px]:w-[80%] max-[950px]:w-[100%] ${
                     confirmPasswordError ? "is-invalid" : ""
                   }`}
                   id="confirmPassword"
@@ -168,11 +168,11 @@ const Home: React.FC = () => {
                   <div className="invalid-feedback">{confirmPasswordError}</div>
                 )}
               </div>
-              <div className="flex gap-2">
-                <button className="mt-2 bg-secondaryLight min-[950px]:w-[60%] max-[950px]:w-[100%] m-auto rounded-[5px] text-white p-1 transition-all duration-300 hover:bg-secondary" type="submit">
+              <div className="flex gap-2 min-[950px]:w-[80%] max-[950px]:w-[100%] m-auto">
+                <button className="mt-2 bg-secondaryLight min-[950px]:w-[80%] max-[950px]:w-[100%] m-auto rounded-[5px] text-white p-1 transition-all duration-300 hover:bg-secondary" type="submit">
                   Sign Up
                 </button>
-                <Link className="mt-2 bg-secondaryLight min-[950px]:w-[60%] max-[950px]:w-[100%] m-auto rounded-[5px] text-white p-1 transition-all duration-300 hover:bg-secondary" href="/">
+                <Link className="mt-2 bg-secondaryLight min-[950px]:w-[80%] max-[950px]:w-[100%] m-auto rounded-[5px] text-white p-1 transition-all duration-300 hover:bg-secondary" href="/">
                   Login
                 </Link>
               </div>

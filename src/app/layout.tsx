@@ -1,4 +1,5 @@
-import './globals.css';
+import "./globals.css";
+import SessionWrapper from "../components/SessionWrapper";
 
 export default function RootLayout({
   children,
@@ -6,13 +7,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <title>Test</title>
-      </head>
-      <body className="min-w-screen min-h-screen overflow-x-hidden">
-        {children}
-      </body>
-    </html>
+    <SessionWrapper>
+      <html lang="en">
+        <head>
+          <title>Test</title>
+        </head>
+        <body className="min-w-screen min-h-screen overflow-x-hidden">
+          {children}
+        </body>
+      </html>
+    </SessionWrapper>
   );
 }
